@@ -7,9 +7,9 @@
   </ion-toolbar>
 
 
-<ion-content>
-  <ion-grid>
-
+  <ion-content [fullscreen]="true" style="border: 10px;" [scrollEvents]="true">
+    <ion-card>
+    <ion-grid>
       <ion-row>
         <ion-col>Req Number</ion-col>
         <ion-col>Status</ion-col>
@@ -21,4 +21,5 @@
         <ion-col><ion-button color="danger" shape="round" routerLink="/view-request-details" (click)="getId(u._id)">Click to View</ion-button></ion-col>
       </ion-row>
   </ion-grid>
+</ion-card>
 </ion-content>

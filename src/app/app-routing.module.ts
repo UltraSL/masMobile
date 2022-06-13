@@ -24,15 +24,11 @@ const routes: Routes = [
   {
     path: 'view-request',
     loadChildren: () => import('./view-request/view-request.module').then( m => m.ViewRequestPageModule)
-  }
-];
-
+  },
+  {
     path: 'forget-password',
     loadChildren: () => import('./forget-password/forget-password.module').then( m => m.ForgetPasswordPageModule)
-  },
-
-
-
+  }
 ];
 
 @NgModule({
