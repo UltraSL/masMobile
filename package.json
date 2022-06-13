@@ -13,6 +13,9 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "1.0.0",
+    "ngx-google-places-autocomplete": "^2.0.5",
+    "agm-direction": "^0.8.10",
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
