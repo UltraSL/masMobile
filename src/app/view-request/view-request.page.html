@@ -1,0 +1,24 @@
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>View Request</ion-title>
+  </ion-toolbar>
+
+
+<ion-content>
+  <ion-grid>
+
+      <ion-row>
+        <ion-col>Req Number</ion-col>
+        <ion-col>Status</ion-col>
+        <ion-col>Action</ion-col>
+      </ion-row>
+      <ion-row *ngFor="let u of searchedRequests; let i=index">
+        <ion-col>{{i+1}}</ion-col>
+        <ion-col>{{u.status}}</ion-col>
+        <ion-col><ion-button color="danger" shape="round" routerLink="/view-request-details" (click)="getId(u._id)">Click to View</ion-button></ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
